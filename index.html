@@ -21,18 +21,33 @@
                 </div>
 
                 <div class="input_form">
-                    <div class="inp input_name" >Ім'я<input id="name_id" type="text" placeholder="Введіть і'мя"></div>
-                    <div class="inp input_secondname">Фамілія<input type="text" placeholder="Введіть Фамілію"></div>
-                    <div class="inp input_email">Пошта<input type="email" placeholder="Введіть пошту"></div>
-                    <div class="inp input_password">Пароль<input type="password" placeholder="Введіть пароль"></div>
-                    <div class="inp input_repeat_password">Підтвердити пароль<input type="password" placeholder="Підтвердити пароль"></div>
+                    <div class="inp input_name" >
+                        Ім'я <p class="errorMessage" style="color: red; font-size: 15px;"></p>
+                        <input class="input_class" id="name_id" type="text" placeholder="Введіть і'мя">
+                    </div>
+                    <div class="inp input_secondname">
+                        Фамілія <p class="errorMessage" style="color: red; font-size: 15px;"></p>
+                        <input class="input_class" id="secondname_id" type="text" placeholder="Введіть Фамілію">
+                    </div>
+                    <div class="inp input_email">
+                        Пошта <p class="errorMessage" style="color: red; font-size: 15px;"></p>
+                        <input class="input_class" id="inp_email" type="email" placeholder="Введіть пошту">
+                    </div>
+                    <div class="inp input_password">
+                        Пароль <p class="errorMessage" style="color: red; font-size: 15px;"></p>
+                        <input class="input_class" id="inp_password" type="password" placeholder="Введіть пароль">
+                    </div>
+                    <div class="inp input_repeat_password">
+                        Підтвердити пароль <p class="errorMessage" style="color: red; font-size: 15px;"></p>
+                        <input class="input_class" id="inp_password_repeat" type="password" placeholder="Підтвердити пароль">
+                    </div>
                 </div>
 
-                <div class="reg">
+                <button class="reg" id="btn_reg">
                     <a href="#" >Зареєструватися</a>
-                </div>
+                </button>
 
-                <a href="#" class="continue_google">
+                <a href="#" class="continue_google" >
                     <img src="img/icon/flat-color-icons_google.png" alt="google" class="icon_google">
                     <div class="continue">продовжити с Google</div>
                 </a>
@@ -41,7 +56,7 @@
             </div>
         </div>
     </div>
-
+    
     
     <script src="js/index.js"></script>
 </body>
