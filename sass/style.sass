@@ -20,7 +20,7 @@ body
                 display: flex
                 flex-direction: row
                 gap: 25px
-                a
+                .btn_form
                     color: #000
                     text-align: center
                     font-family: HelveticaNeue
@@ -28,6 +28,9 @@ body
                     font-weight: 700
                     text-transform: uppercase
                     text-decoration: none
+                    background: none
+                    border: none
+                    cursor: pointer
             .input_form
                 margin-top: 45px
                 display: flex
@@ -52,6 +55,13 @@ body
                         background: #F8F1FF
                         font-size: 12px
                         border: none
+            .check_box
+                margin-top: 20px
+                display: flex
+                gap: 10px
+                font-size: 12px
+                font-family: HelveticaNeue
+                display: none
             .reg
                 margin-top: 37px
                 width: 273px
@@ -62,7 +72,6 @@ body
                 background: #985ACE
                 border-radius: 7px
                 /* box-shadow: 273px 0.5px rgba(0, 0, 0, 0.5) */
-
                 a
                     color: #FFF
                     text-align: center
@@ -71,6 +80,17 @@ body
                     font-weight: 700
                     text-transform: uppercase
                     text-decoration: none
+            #forgot_password
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-shrink: 0
+                font-size: 12px
+                font-family: HelveticaNeue
+                color: #000
+                text-decoration: none
+                margin-top: 27px
+                display: none
             .continue_google
                 width: 273px
                 height: 40px
@@ -86,6 +106,5 @@ body
                     text-align: center
                     font-family: HelveticaNeue
                     font-size: 12px
-                    text-transform: capitalize
                     margin-left: 22px
                     

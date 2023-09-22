@@ -16,18 +16,18 @@
         <div class="container">
             <div class="big_form">
                 <div class="sign">
-                    <a href="#" class="login">Ввійти</a>
-                    <a href="#" class="register">Зареєструватися</a>
+                    <button class="btn_form login" id="form_login">Ввійти</button>
+                    <button class="btn_form register" id="form_reg">Зареєструватися</button>
                 </div>
 
                 <div class="input_form">
-                    <div class="inp input_name" >
+                    <div class="inp input_name only_reg" >
                         Ім'я <p class="errorMessage" style="color: red; font-size: 15px;"></p>
                         <input class="input_class" id="name_id" type="text" placeholder="Введіть і'мя">
                     </div>
-                    <div class="inp input_secondname">
-                        Фамілія <p class="errorMessage" style="color: red; font-size: 15px;"></p>
-                        <input class="input_class" id="secondname_id" type="text" placeholder="Введіть Фамілію">
+                    <div class="inp input_secondname only_reg">
+                        Прізвище <p class="errorMessage" style="color: red; font-size: 15px;"></p>
+                        <input class="input_class" id="secondname_id" type="text" placeholder="Введіть прізвище">
                     </div>
                     <div class="inp input_email">
                         Пошта <p class="errorMessage" style="color: red; font-size: 15px;"></p>
@@ -37,19 +37,27 @@
                         Пароль <p class="errorMessage" style="color: red; font-size: 15px;"></p>
                         <input class="input_class" id="inp_password" type="password" placeholder="Введіть пароль">
                     </div>
-                    <div class="inp input_repeat_password">
+                    <div class="inp input_repeat_password only_reg" id="password_repeat">
                         Підтвердити пароль <p class="errorMessage" style="color: red; font-size: 15px;"></p>
-                        <input class="input_class" id="inp_password_repeat" type="password" placeholder="Підтвердити пароль">
+                        <input class="input_class" id="inp_password_repeat" type="password" placeholder="Повторіть пароль">
                     </div>
+                </div>
+
+                <div class="check_box" id="check_box_login">
+                    <input type="checkbox"> Запам'ятати мене
                 </div>
 
                 <button class="reg" id="btn_reg">
                     <a href="#" >Зареєструватися</a>
                 </button>
 
-                <a href="#" class="continue_google" >
+                <a href="#" id="forgot_password">
+                    Забыли пароль?
+                </a>
+
+                <a href="#" class="continue_google" id="continue_google">
                     <img src="img/icon/flat-color-icons_google.png" alt="google" class="icon_google">
-                    <div class="continue">продовжити с Google</div>
+                    <div class="continue">Продовжити з Google</div>
                 </a>
 
 
@@ -57,7 +65,7 @@
         </div>
     </div>
     
-    
+
     <script src="js/index.js"></script>
 </body>
 </html>
