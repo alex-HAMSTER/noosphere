@@ -29,7 +29,7 @@ const btnReg = document.getElementById('btn_reg');
 
 const form_login = document.getElementById('form_login')
 const form_reg = document.getElementById('form_reg')
-btnReg.addEventListener('click', function () {
+btnReg.addEventListener('click',  () => {
     
     errorMessages.forEach(function (errorMessage) {
         errorMessage.textContent = '';
@@ -52,7 +52,7 @@ const continue_google = document.getElementById('continue_google');
 const chekPassword = document.getElementById('check_password_btn')
 const inpPassword = document.getElementById('inp_password')
 
-form_login.addEventListener('click', function() {
+form_login.addEventListener('click', () =>  {
     only_reg.forEach(function(i){
         i.style.cssText = 'display:none;'
     })
@@ -63,7 +63,7 @@ form_login.addEventListener('click', function() {
     continue_google.style.cssText = 'margin-top: 20px'
 })
 
-form_reg.addEventListener('click', function(){
+form_reg.addEventListener('click', () => {
     only_reg.forEach(function(i){
         i.style.cssText = 'display:block;'
     })
@@ -75,7 +75,7 @@ form_reg.addEventListener('click', function(){
 
 
 
-chekPassword.addEventListener('click', function(){
+chekPassword.addEventListener('click', () => {
     inpPassword.type = 'text';
 })
 
