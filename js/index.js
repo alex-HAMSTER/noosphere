@@ -79,6 +79,12 @@ chekPassword.addEventListener('click', () => {
     inpPassword.type = 'text';
 })
 
+/* const nameId = document.getElementById('name_id');
+nameId.value = 'HAMSTER'
+nameId.setAttribute('value', 'hamster')
+сет атрибут делает то же саоме что и строчка свверху НО можно внести любой атрибут
+ */
+
 /* chekPassword.addEventListener('click', function(){
     inpPassword.type = 'password';
 }) 
